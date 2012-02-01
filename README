@@ -1,0 +1,9 @@
+Installation:
+
+    git clone git://github.com/heim/oh-my-zsh-custom.git ~/.oh-my-zsh/custom
+
+        Create symlinks:
+
+                ln -s ~/.oh-my-zsh/custom/zshrc ~/.zshrc
+
+                
