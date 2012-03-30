@@ -31,7 +31,7 @@ alias dush="du -sh"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rvm bundler brew osx vagrant)
+plugins=(git rvm brew osx vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,8 +39,11 @@ compctl -k "(clean install test jetty:run package compile verify idea:idea idea:
 
 # Customize to your needs...
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+eval "$(rbenv init -)"
+
+
