@@ -45,6 +45,9 @@ alias zshreload="source ~/.zshrc"
 
 
 
+alias zshconfig="vi ~/.zshrc"
+alias ohmyzsh="vi ~/.oh-my-zsh"
+alias dush="du -sh"
 
 
 alias maven2.2.1="bash -c 'cd /usr/local/opt/maven && rm -rf current && ln -s apache-maven-2.2.1 current && cd && mvn -version'"
@@ -66,7 +69,7 @@ alias studentliv="cd ~/code/sio/studentliv/app"
 alias bris="cd ~/code/sio/brukerregister"
 alias brisservice="cd ~/code/sio/brukerregister/service && mvn jetty:run"
 alias hsql="/usr/local/opt/hsqldb/demo/runServer.sh"
-
+alias buzzolini="cd ~/code/faglig-bell/buzzolini"
 
 
 alias mavenhjemme="mv ~/.m2/settings.xml ~/.m2/settings_sio.xml"
@@ -79,3 +82,4 @@ alias cde="cd /Users/andreas/code/pres/continuous-delivery-workshop/Continuous-D
 #rails aliases
 alias at="autotest"
 alias rs="rails server"
+alias be="bundle exec"
