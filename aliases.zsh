@@ -69,7 +69,7 @@ alias studentliv="cd ~/code/sio/studentliv/app"
 alias bris="cd ~/code/sio/brukerregister"
 alias brisservice="cd ~/code/sio/brukerregister/service && mvn jetty:run"
 alias hsql="/usr/local/opt/hsqldb/demo/runServer.sh"
-alias buzzolini="cd ~/code/faglig-bell/buzzolini"
+alias buzzolini="cd ~/code/faglig-bekk/buzzolini"
 
 
 alias mavenhjemme="mv ~/.m2/settings.xml ~/.m2/settings_sio.xml"

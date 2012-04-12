@@ -1,3 +1,4 @@
+#TODO: add this export PS1="\u@\h:\W #\! \A \`if [ \$? == 0 ]; then echo \:\); else echo \:\(; fi\` "
 PROMPT='%{$fg_no_bold[cyan]%}$(hostname_if_connected_via_ssh) %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)$(time_since_last_commit)%{$fg_bold[blue]%}# % %{$reset_color%}'
 
 #who | grep -P '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
