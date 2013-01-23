@@ -34,15 +34,12 @@ source $ZSH/oh-my-zsh.sh
 
 compctl -k "(clean install test jetty:run package compile verify idea:idea idea:clean dependency:analyze dependency:tree)" mvn
 
-# Customize to your needs...
-
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 
-
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:/opt/local/bin
 PATH=$HOME/.rbenv/shims:$PATH
-eval "$(rbenv init -)"
+
 
 
