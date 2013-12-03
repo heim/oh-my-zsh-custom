@@ -1,0 +1,1 @@
+alias lein="nocorrect lein"

@@ -38,7 +38,7 @@ compctl -k "(clean install test jetty:run package compile verify idea:idea idea:
 
 #if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:/opt/local/bin
+PATH=$PATH:/opt/local/bin:/usr/local/share/npm/bin/
 PATH=$HOME/.rbenv/shims:$PATH
 
 
