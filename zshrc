@@ -39,7 +39,18 @@ compctl -k "(clean install test jetty:run package compile verify idea:idea idea:
 #if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:/opt/local/bin:/usr/local/share/npm/bin/
-PATH=$HOME/.rbenv/shims:$PATH
+PATH=$HOME/google-cloud-sdk/bin:$PATH
+PATH=$HOME/code/scrappy-scripts:$PATH
+export GOPATH=$HOME/.gopath
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+# The next line enables shell command completion for gcloud.
+source '/Users/heim/google-cloud-sdk/completion.zsh.inc'
 
 
+eval $(thefuck --alias fuck)
 
+
+# added by travis gem
+[ -f /Users/heim/.travis/travis.sh ] && source /Users/heim/.travis/travis.sh
