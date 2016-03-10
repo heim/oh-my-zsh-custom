@@ -1,6 +1,4 @@
 #TODO: add this export PS1="\u@\h:\W #\! \A \`if [ \$? == 0 ]; then echo \:\); else echo \:\(; fi\` "
-local _gcloud_project="%{$fg_no_bold[green]%}gcloud:%{$fg_no_bold[yellow]%} $(current-env)%{$reset_color%}"
-local _kube_auth="%{$fg_no_bold[green]%}kube: %{$fg_no_bold[yellow]%}$(current-cluster)%{$reset_color%}"
 local _hostname_if_ssh="%{$fg_no_bold[cyan]%}$(hostname_if_connected_via_ssh) %{$reset_color%}"
 local _time="⌚ %{$fg_bold[red]%}%*%{$reset_color%}"
 
@@ -14,4 +12,4 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
-RPROMPT='${_gcloud_project} ${_kube_auth} ${_time}'
+RPROMPT='%{$fg_no_bold[green]%}gcloud:%{$fg_no_bold[yellow]%} $(current-env)%{$reset_color%} %{$fg_no_bold[green]%}kube: %{$fg_no_bold[yellow]%}$(current-cluster)%{$reset_color%} ${_time}'
