@@ -45,6 +45,7 @@ export GOPATH=$HOME/.gopath
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+export PATH=~/.rbenv/shims:$PATH
 # The next line enables shell command completion for gcloud.
 source '/Users/heim/google-cloud-sdk/completion.zsh.inc'
 

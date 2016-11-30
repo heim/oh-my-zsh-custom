@@ -14,6 +14,9 @@ alias l="ls -lAh"
 alias ll="ls -lh"
 alias la='ls -lah'
 
+
+alias vi='vim'
+
 alias zshreload="source ~/.zshrc"
 
 #dockers
