@@ -42,13 +42,13 @@ PATH=$PATH:/opt/local/bin:/usr/local/share/npm/bin/
 PATH=$HOME/google-cloud-sdk/bin:$PATH
 PATH=$HOME/code/scrappy-scripts:$PATH
 export GOPATH=$HOME/code/go
-export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 export PATH=~/.rbenv/shims:$PATH
 # The next line enables shell command completion for gcloud.
 source '/Users/heim/google-cloud-sdk/completion.zsh.inc'
 
+source /Users/heim/code/scrappy-scripts/alias.sh
 
 eval $(thefuck --alias fuck)
 

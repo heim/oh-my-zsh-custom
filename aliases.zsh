@@ -38,7 +38,18 @@ alias k=kubectl
 alias g=gcloud
 alias dm=docker-machine
 alias d=docker
+alias dev=switch-env development
+alias sand=switch-env sandbox
+alias prod=switch-env production
+alias gosrc="cd ~/code/go/src/github.com/unacast"
 
 
 
-
+# scrappys
+alias current-cluster=uc-current-cluster
+alias current-env=uc-current-env
+alias kube-auth=uc-kube-auth
+alias list-clusters=uc-list-clusters
+alias list-db-instances=uc-list-db-instances
+alias list-instances=uc-list-instances
+alias switch-env=uc-switch-env
