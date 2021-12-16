@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh configuration.
+ZSH_DISABLE_COMPFIX=true
 ZSH=$HOME/.oh-my-zsh
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -32,26 +32,17 @@ plugins=(git brew osx vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
-compctl -k "(clean install test jetty:run package compile verify idea:idea idea:clean dependency:analyze dependency:tree)" mvn
-
-
-
 #if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:/opt/local/bin:/usr/local/share/npm/bin/
 PATH=$HOME/google-cloud-sdk/bin:$PATH
-PATH=$HOME/code/scrappy-scripts:$PATH
-export GOPATH=$HOME/code/go
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
-export PATH=~/.rbenv/shims:$PATH
+export PATH=$PATH:~/.skippy_scripts
 # The next line enables shell command completion for gcloud.
-source '/Users/heim/google-cloud-sdk/completion.zsh.inc'
-
-source /Users/heim/code/scrappy-scripts/alias.sh
+source '/Users/andreasheim/google-cloud-sdk/completion.zsh.inc'
 
 eval $(thefuck --alias fuck)
 
 
-# added by travis gem
-[ -f /Users/heim/.travis/travis.sh ] && source /Users/heim/.travis/travis.sh
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/andreasheim/.sdkman"
+[[ -s "/Users/andreasheim/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/andreasheim/.sdkman/bin/sdkman-init.sh"
